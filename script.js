@@ -100,10 +100,55 @@ if (x) {
     console.log("x existe");
 }
 
-}
+let a = 2;
+let b = "2";
 
-if (x===y) {
+
+
+if (a == b) {
 console.log("ils sont égaux");
 } else {
     console.log("ils sont différents");
 }
+
+// || ou
+// && et
+
+
+//soit l'un soit l'autre
+if (x < y || x > 1) {
+    console.log("ok");
+}
+
+if (x < y && x > 1) {
+    console.log("ok");
+}
+
+/*les fonctions*/
+
+//fonction classique
+function direBonjour() {
+    console.log("Bonjour");
+    console.log( 5 + 6);
+    alert("calcul terminé");
+}
+
+//il faut impérativement appeler la fonction pour qu'elle s'execute
+//appeler une fonction = direBonjour();
+
+//fonction fléchée
+const addition = (a, b) => {
+    console.log(a + b);
+}
+
+addition(5, 6);
+addition(10, 6);
+
+//la portée des variables
+
+function add2() {
+    let num = 5;
+    console.log( num + 2);
+}
+
+add2();
